@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CropCare | Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* ===== NAVBAR ===== */
+    header {
+      background: rgba(46, 139, 87, 0.85);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 17px;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+      border-bottom: 2px solid #ffeb3b;
+      padding-bottom: 4px;
+    }
+
+    /* ===== INTRO SECTION ===== */
+    .intro {
+      text-align: center;
+      padding: 100px 30px;
+      backdrop-filter: brightness(0.8);
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 25px;
+      max-width: 800px;
+      margin: 100px auto;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.2s ease;
+    }
+
+    .intro h2 {
+      font-size: 45px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .intro p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #f4f4f4;
+      line-height: 1.7;
+    }
+
+    .btn-container {
+      margin-top: 40px;
+      animation: fadeInUp 1.4s ease;
+    }
+
+    .btn {
+      background-color: #2e8b57;
+      color: white;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 17px;
+      font-weight: 500;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .btn:hover {
+      background-color: #43a047;
+      transform: scale(1.05);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      background-color: rgba(46, 139, 87, 0.9);
+      color: white;
+      padding: 20px;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 -3px 12px rgba(0,0,0,0.2);
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>🌾 CropCare</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/register">Register</a>
+      <a href="/login">Login</a>
+      <a href="/details">Details</a>
+    </nav>
+  </header>
+
+  <!-- ===== INTRO ===== -->
+  <section class="intro">
+    <h2>Welcome to CropCare</h2>
+    <p>CropCare is an AI-powered platform that helps farmers detect crop diseases instantly  
+       by uploading crop images, and provides accurate remedies and solutions for healthy growth.</p>
+    <div class="btn-container">
+      <a href="/register" class="btn">Get Started</a>
+      <a href="/details" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2025 CropCare | Empowering Smart Farming 🌱
+  </footer>
+</body>
+</html>

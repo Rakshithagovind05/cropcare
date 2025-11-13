@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CropCare | Project Details</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #f9fff7, #e8f5e9);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #2e8b57;
+      color: white;
+      padding: 18px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    main {
+      flex: 1;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .details-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .details-section h2 {
+      color: #2e7d32;
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .details-section p {
+      color: #444;
+      font-size: 17px;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .step-card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      width: 260px;
+      padding: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .step-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .step-card h3 {
+      color: #2e8b57;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .step-card p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .importance {
+      background: #f1f8f4;
+      padding: 35px;
+      border-radius: 14px;
+      margin-top: 50px;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .importance h3 {
+      color: #2e7d32;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .importance p {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #2e7d32, #388e3c);
+      color: #f1f8e9;
+      text-align: center;
+      padding: 18px 0;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      border-top: 3px solid #1b5e20;
+      margin-top: auto;
+      box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer span {
+      color: #ffeb3b;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌾 CropCare</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/register">Register</a>
+      <a href="/login">Login</a>
+      <a href="/details">Details</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="details-section">
+      <h2>About the CropCare Project</h2>
+      <p>
+        <strong>CropCare</strong> is an innovative agriculture assistance platform designed to help farmers detect crop diseases instantly using image-based analysis. 
+        By uploading an image of an affected crop, the system identifies the type of disease and provides relevant solutions and preventive measures to restore plant health.  
+        The platform also offers insights into market trends, enabling farmers to make smart decisions about cultivation and sales.
+      </p>
+
+      <div class="steps">
+        <div class="step-card">
+          <h3>📸 Step 1: Upload Crop Image</h3>
+          <p>Farmers can upload an image of their diseased crop directly from their phone or computer.</p>
+        </div>
+        <div class="step-card">
+          <h3>🧠 Step 2: AI Disease Detection</h3>
+          <p>Our system uses AI models to analyze the image and identify the crop disease with high accuracy.</p>
+        </div>
+        <div class="step-card">
+          <h3>💊 Step 3: Get Remedies</h3>
+          <p>Once the disease is detected, the user receives detailed remedies and prevention steps instantly.</p>
+        </div>
+        <div class="step-card">
+          <h3>📈 Step 4: Market Updates</h3>
+          <p>Farmers can also check real-time market trends for different crops to maximize profit.</p>
+        </div>
+      </div>
+
+      <div class="importance">
+        <h3>🌱 Why CropCare is Important</h3>
+        <p>
+          Crop diseases can drastically reduce yield and income. With CropCare, farmers can identify diseases early and take corrective action before the damage spreads.
+          The platform promotes sustainable farming, boosts productivity, and empowers rural communities through accessible technology.  
+          It bridges the gap between farmers and digital agriculture solutions — ensuring a healthier, smarter, and more sustainable farming future.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span>2025 CropCare</span> | Empowering Smart Farming 🌱</p>
+  </footer>
+</body>
+</html>

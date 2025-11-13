@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CropCare | Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #eafaf1, #d3f4e1);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* ===== NAVBAR ===== */
+    header {
+      background-color: #2e8b57;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 17px;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+      border-bottom: 2px solid #ffeb3b;
+      padding-bottom: 4px;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .intro {
+      text-align: center;
+      padding: 120px 30px 80px;
+      background: linear-gradient(120deg, #66bb6a, #43a047);
+      color: white;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .intro h2 {
+      font-size: 44px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .intro p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #f4f4f4;
+      line-height: 1.6;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .btn-container {
+      margin-top: 40px;
+      animation: fadeInUp 1.4s ease;
+    }
+
+    .btn {
+      background-color: #2e8b57;
+      color: white;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 17px;
+      font-weight: 500;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .btn:hover {
+      background-color: #43a047;
+      transform: scale(1.05);
+    }
+
+    /* ===== IMAGE SHOWCASE ===== */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin: 100px auto 60px;
+      max-width: 1100px;
+      padding: 0 20px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    /* ===== TAGLINE SECTION ===== */
+    .tagline {
+      text-align: center;
+      max-width: 800px;
+      margin: 40px auto;
+      font-size: 20px;
+      font-weight: 500;
+      color: #2e8b57;
+      line-height: 1.6;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>🌾 CropCare</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/register">Register</a>
+      <a href="/login">Login</a>
+      <a href="/details">Details</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="intro">
+    <h2>Welcome to CropCare</h2>
+    <p>Empowering farmers through AI-powered disease detection and smart agricultural insights.  
+       Upload a crop image, identify issues instantly, and access expert solutions 🌱</p>
+    <div class="btn-container">
+      <a href="/register" class="btn">Get Started</a>
+      <a href="/details" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ===== IMAGE SHOWCASE ===== -->
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1581578017423-3f850d82b0a6?auto=format&fit=crop&w=800&q=60" alt="Healthy Wheat">
+    <img src="https://images.unsplash.com/photo-1600180758890-6a1bb1a1b64c?auto=format&fit=crop&w=800&q=60" alt="Rice Field">
+    <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=800&q=60" alt="Corn Crop">
+    <img src="https://images.unsplash.com/photo-1624454001128-12a4d14e69f1?auto=format&fit=crop&w=800&q=60" alt="Tomato Plants">
+  </div>
+
+  <!-- ===== TAGLINE ===== -->
+  <div class="tagline">
+    “CropCare combines the power of AI and agriculture — helping farmers detect, prevent, and prosper.”
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2025 CropCare | Growing Smarter Together 🌿
+  </footer>
+</body>
+</html>

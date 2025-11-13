@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CropCare | Disease Detection</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e8f5e9, #dcedc8);
+      color: #333;
+    }
+
+    header {
+      background-color: #2e8b57;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 17px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+      border-bottom: 2px solid #ffeb3b;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e8b57;
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    .crop-card {
+      display: flex;
+      align-items: center;
+      background: #f9fbe7;
+      margin-bottom: 30px;
+      border-left: 5px solid #2e8b57;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+      overflow: hidden;
+    }
+
+    .crop-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .crop-card img {
+      width: 180px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px 0 0 12px;
+    }
+
+    .crop-info {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .crop-info h3 {
+      color: #388e3c;
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+
+    .crop-info ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #444;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .back-btn {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 10px auto;
+      background-color: #2e8b57;
+      color: white;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .back-btn:hover {
+      background-color: #256d47;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🌾 CropCare</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/details">Details</a>
+      <a href="/services">Services</a>
+      <a href="/login">Logout</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>🦠 Crop Disease Detection & Information</h2>
+
+    <!-- Tomato -->
+    <div class="crop-card">
+      <img src="/image/image/t dis.jpg" alt="Tomato">
+      <div class="crop-info">
+        <h3>🍅 Tomato Diseases</h3>
+        <ul>
+          <li><b>Early Blight:</b> Dark spots with yellow halos on leaves.</li>
+          <li><b>Late Blight:</b> Water-soaked lesions and white mold under leaves.</li>
+          <li><b>Detection:</b> Look for rapid leaf decay and moldy odor.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Rice -->
+    <div class="crop-card">
+      <img src="/image/image/rice dis.jpg" alt="Rice">
+      <div class="crop-info">
+        <h3>🌾 Rice Diseases</h3>
+        <ul>
+          <li><b>Leaf Blast:</b> Diamond-shaped lesions on leaves.</li>
+          <li><b>Brown Spot:</b> Brown circular patches on older leaves.</li>
+          <li><b>Detection:</b> Check for spots near leaf tips and neck of panicles.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Maize -->
+    <div class="crop-card">
+      <img src="/image/image/maize dis.jpg" alt="Maize">
+      <div class="crop-info">
+        <h3>🌽 Maize (Corn) Diseases</h3>
+        <ul>
+          <li><b>Leaf Blight:</b> Long grayish streaks and leaf drying.</li>
+          <li><b>Rust:</b> Small reddish-brown pustules on leaves.</li>
+          <li><b>Detection:</b> Inspect undersides of leaves for rust spores.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Cotton -->
+    <div class="crop-card">
+      <img src="/image/image/cotton.jpg" alt="Cotton">
+      <div class="crop-info">
+        <h3>☁️ Cotton Diseases</h3>
+        <ul>
+          <li><b>Wilt Disease:</b> Sudden drooping of leaves and yellowing.</li>
+          <li><b>Bacterial Blight:</b> Angular leaf spots and shedding of squares.</li>
+          <li><b>Detection:</b> Slice stems to see dark brown internal streaks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Wheat -->
+    <div class="crop-card">
+      <img src="/image/image/wheat.jpg" alt="Wheat">
+      <div class="crop-info">
+        <h3>🌿 Wheat Diseases</h3>
+        <ul>
+          <li><b>Rust:</b> Orange powdery patches on leaves and stems.</li>
+          <li><b>Smuts:</b> Black fungal spores replacing grains.</li>
+          <li><b>Detection:</b> Check ears for dark or powdery growth.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ✅ Back Button at Bottom -->
+    <a href="/services" class="back-btn">← Back to Services</a>
+  </div>
+
+  <footer>
+    © 2025 CropCare | Smart Farming for a Better Future 🌿
+  </footer>
+</body>
+</html>

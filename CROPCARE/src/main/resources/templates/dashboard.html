@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CropCare | Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #eafaf1, #d3f4e1);
+      color: #333;
+    }
+
+    /* ===== NAVBAR ===== */
+    header {
+      background-color: #2e8b57;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 16px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+      border-bottom: 2px solid #ffeb3b;
+      padding-bottom: 3px;
+    }
+
+    /* ===== MAIN ===== */
+    .dashboard {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .dashboard h2 {
+      font-size: 36px;
+      color: #2e8b57;
+    }
+    .dashboard p {
+      font-size: 18px;
+      max-width: 750px;
+      margin: 10px auto 60px;
+      color: #555;
+    }
+
+    /* ===== SERVICE CARDS ===== */
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: white;
+      width: 280px;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      color: #2e8b57;
+      font-size: 22px;
+    }
+    .card p {
+      color: #555;
+      font-size: 15px;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #2e8b57;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .card a:hover {
+      background-color: #43a047;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      background-color: #2e8b57;
+      color: white;
+      padding: 18px;
+      margin-top: 80px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌾 CropCare Dashboard</h1>
+  <nav>
+    <a href="/dashboard">Home</a>
+    <a href="/crops">Crops</a>
+    <a href="/upload">Upload</a>
+    <a href="/solution">Solutions</a>
+    <a href="/logout">Logout</a>
+  </nav>
+</header>
+
+<section class="dashboard">
+  <h2>Welcome Back to CropCare 👨‍🌾</h2>
+  <p>Detect crop diseases, explore remedies, and improve productivity with smart agricultural insights.</p>
+
+  <div class="services">
+    <div class="card">
+      <h3>🌿 Crop Diseases</h3>
+      <p>Learn about common crop diseases and their preventive measures.</p>
+      <a href="/crops">View Details →</a>
+    </div>
+
+    <div class="card">
+      <h3>📸 Upload Crop Image</h3>
+      <p>Upload a diseased crop image for AI-based disease detection.</p>
+      <a href="/upload">Upload Now →</a>
+    </div>
+
+    <div class="card">
+      <h3>💊 Remedies & Solutions</h3>
+      <p>Find accurate, AI-recommended treatments for each detected disease.</p>
+      <a href="/solution">View Remedies →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 CropCare | Empowering Smarter Farming 🌱
+</footer>
+
+</body>
+</html>

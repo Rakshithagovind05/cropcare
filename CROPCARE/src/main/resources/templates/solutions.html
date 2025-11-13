@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CropCare | Remedies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e8f5e9, #dcedc8);
+      color: #333;
+    }
+
+    header {
+      background-color: #2e8b57;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 17px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+      border-bottom: 2px solid #ffeb3b;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e8b57;
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    .crop-card {
+      display: flex;
+      align-items: center;
+      background: #f9fbe7;
+      margin-bottom: 30px;
+      border-left: 5px solid #2e8b57;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .crop-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .crop-card img {
+      width: 180px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px 0 0 12px;
+    }
+
+    .crop-info {
+      padding: 20px;
+    }
+
+    .crop-info h3 {
+      color: #388e3c;
+      margin: 0 0 10px 0;
+    }
+
+    .crop-info ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #444;
+    }
+
+    /* ✅ Back Button Styling */
+    .back-btn {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 10px auto;
+      background-color: #2e8b57;
+      color: white;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .back-btn:hover {
+      background-color: #256d47;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🌾 CropCare</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/details">Details</a>
+      <a href="/services">Services</a>
+      <a href="/login">Logout</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>💡 Crop Remedies & Treatments</h2>
+
+    <!-- Tomato Remedies -->
+    <div class="crop-card">
+      <img src="/image/image/t.jpg" alt="Tomato Remedies">
+      <div class="crop-info">
+        <h3>🍅 Tomato Remedies</h3>
+        <ul>
+          <li><b>Early Blight:</b> Remove affected leaves and apply copper-based fungicides.</li>
+          <li><b>Late Blight:</b> Use resistant varieties, avoid overhead watering, and spray fungicides early.</li>
+          <li><b>General Care:</b> Maintain crop rotation and proper spacing to reduce disease spread.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Rice Remedies -->
+    <div class="crop-card">
+      <img src="/image/image/rice pes.jpg" alt="Rice Remedies">
+      <div class="crop-info">
+        <h3>🌾 Rice Remedies</h3>
+        <ul>
+          <li><b>Leaf Blast:</b> Use resistant varieties and balanced nitrogen fertilization.</li>
+          <li><b>Brown Spot:</b> Apply zinc and potassium fertilizers and remove affected leaves.</li>
+          <li><b>General Care:</b> Maintain proper water levels and monitor for fungal infections.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Maize Remedies -->
+    <div class="crop-card">
+      <img src="/image/image/maize pes.jpg" alt="Maize Remedies">
+      <div class="crop-info">
+        <h3>🌽 Maize (Corn) Remedies</h3>
+        <ul>
+          <li><b>Leaf Blight:</b> Use fungicides and practice crop rotation.</li>
+          <li><b>Rust:</b> Remove infected leaves and ensure proper spacing for airflow.</li>
+          <li><b>General Care:</b> Avoid planting maize near previously infected crops.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Cotton Remedies -->
+    <div class="crop-card">
+      <img src="/image/image/cotton pes.jpg" alt="Cotton Remedies">
+      <div class="crop-info">
+        <h3>☁️ Cotton Remedies</h3>
+        <ul>
+          <li><b>Wilt Disease:</b> Use disease-free seeds and apply appropriate fungicides.</li>
+          <li><b>Bacterial Blight:</b> Remove infected parts and use copper-based sprays.</li>
+          <li><b>General Care:</b> Ensure crop rotation and healthy irrigation practices.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Wheat Remedies -->
+    <div class="crop-card">
+      <img src="/image/image/rice pes.jpg" alt="Wheat Remedies">
+      <div class="crop-info">
+        <h3>🌿 Wheat Remedies</h3>
+        <ul>
+          <li><b>Rust:</b> Plant resistant varieties and apply fungicides at early signs.</li>
+          <li><b>Smuts:</b> Treat seeds with fungicides before sowing.</li>
+          <li><b>General Care:</b> Maintain proper field sanitation and crop rotation.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ✅ Back to Services Button at Bottom -->
+    <a href="/services" class="back-btn">← Back to Services</a>
+
+  </div>
+
+  <footer>
+    © 2025 CropCare | Smart Farming for a Better Future 🌿
+  </footer>
+</body>
+</html>
